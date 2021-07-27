@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/techandas",
+      "handler": "techanda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/techandas/count",
+      "handler": "techanda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/techandas/:id",
+      "handler": "techanda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/techandas",
+      "handler": "techanda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/techandas/:id",
+      "handler": "techanda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/techandas/:id",
+      "handler": "techanda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

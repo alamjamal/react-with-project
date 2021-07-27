@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "techandas",
+  "info": {
+    "name": "techanda",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Blogtext": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
